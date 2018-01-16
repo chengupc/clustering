@@ -36,3 +36,10 @@ def get_cov(data,k=1):
 
 #test_data
 t_d = np.array([[2.5,0.5,2.2,1.9,3.1,2.3,2,1,1.5,1.1],[2.4,0.7,2.9,2.2,3.0,2.7,1.6,1.1,1.6,0.9]]).T
+
+
+
+#机器学习库中直接调用PCA
+from sklearn.decomposition import PCA
+pca = PCA(n_componets=2)
+re = pca.fit_transform(t_d)
